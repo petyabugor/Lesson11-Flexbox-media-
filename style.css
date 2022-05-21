@@ -77,10 +77,21 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 20px;
     color: #000000;
 }
+@media screen and (max-width:1110px) {
+    .menu__link{
+        margin-right: 27px;
+    }
+}
+@media screen and (max-width:932px) {
+    .menu__link{
+        display: none;
+    }
+}
 .header__button {
     display: flex;
     gap: 10px;
 }
+
 .header__button_left { 
     padding: 1px 36px;
     font-weight: 600;
@@ -110,6 +121,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
 }
 .content-left { 
+    max-width: 539px;
     display: flex;
     flex-direction: column;
 }
@@ -141,6 +153,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 25px;
 }
 .main__button-left { 
+    flex-shrink: 0;
     background: #FF6336;
     font-weight: 600;
     font-size: 16px;
@@ -150,6 +163,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 42px;
 }
 .main__button-right { 
+    flex-shrink: 0;
     font-weight: 600;
     font-size: 16px;
     line-height: 60px;
@@ -159,6 +173,7 @@ h1,h2,h3,h4,h5,h6 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 0 29px;
 }
+
 .content-right {
     max-width: 759px;
  }
@@ -388,7 +403,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .revolut__img {
-    max-width: 310px;
+    min-width: 210px;
  }
 
 
@@ -410,6 +425,7 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 809px;
  }
 .most-loved__left__img { 
+    min-width: 100px;
     margin-right: 67px;
 }
 .most-loved__left__text {
@@ -420,6 +436,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #000000;
     max-width: 461px;
  }
+
 .most-loved__right { 
     display: flex;
     justify-content: space-between;
@@ -429,7 +446,29 @@ h1,h2,h3,h4,h5,h6 {
     gap: 70px;
     border-left: 1px solid #1D1D1B;
 }
-
+@media screen  and(max-width:882px){
+    .most-loved {
+        padding: 53px 0 41px 0;
+      }
+    
+    .most-loved__wrapper { 
+        display: flex;
+        justify-content: space-between;
+    }
+    .most-loved__left {
+        padding-right: 15px;
+        max-width: 409px;
+     }
+    .most-loved__left__img { 
+        margin-right: 27px;
+    }
+    .most-loved__left__text {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 361px;
+     }
+    
+ }
 
 /*..................integrate...........*/
 .integrate__container { 
@@ -768,11 +807,11 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen  and (max-width:767px) {
 ._container{
-    max-width: 700px;
+    max-width: 100%;
     padding: 0 20px;
     }
 ._container-narrow{
-    max-width: 670px;
+    max-width: 100%;
     padding: 0 20px;
     }
     
@@ -947,8 +986,8 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 395px;
  }
 .revolut__text { 
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .revolut__img {
@@ -957,26 +996,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /*..................most-loved.............*/
-.most-loved {
-    padding: 53px 0 41px 0;
-  }
 
-.most-loved__wrapper { 
-    display: flex;
-    justify-content: space-between;
-}
-.most-loved__left {
-    padding-right: 15px;
-    max-width: 409px;
- }
-.most-loved__left__img { 
-    margin-right: 27px;
-}
-.most-loved__left__text {
-    font-size: 20px;
-    line-height: 30px;
-    max-width: 361px;
- }
 
 /*..................integrate...........*/
 .integrate__container { 
@@ -1043,6 +1063,36 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 12px;
     line-height: 15px;
 }
+
+}
+
+/*....................mobile....................*/
+
+@media screen and (max-width:575px) {
+    .content-left{
+        max-width: 239px;
+    }
+    .content-left-title{
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    .content-left-text1{
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+@media screen and(max-width:499px) {
+    .what-can-you__content {
+        display: flex;
+        flex-wrap: nowrap;
+
+     }
+    .revolut__text { 
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 13px;
+    }
 
 }
 
