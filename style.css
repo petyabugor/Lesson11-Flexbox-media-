@@ -1043,7 +1043,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /*..................integrate...........*/
 .integrate__container { 
-    padding: 69px 0 49px 0;
+    padding: 69px 10px 49px 10px;
 }
 .integrate__title {
     max-width: 750px;
@@ -1053,6 +1053,7 @@ h1,h2,h3,h4,h5,h6 {
 .integrate__text {
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
  }
 
 /*...................localization ...........*/
@@ -1112,8 +1113,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*....................mobile....................*/
-
-
 
 @media (max-width: 704px) {
 	.what-can-you__item { 
